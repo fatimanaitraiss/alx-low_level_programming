@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
  * *_strcat - concatenates two strings
  * @dest: pointer destination
@@ -20,4 +20,3 @@ do {
 
 return (dest);
 }
-
