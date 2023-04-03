@@ -1,25 +1,20 @@
 #include "main.h"
+
 /**
- * *_strncat - concatenates n bytes of two strings
- * @dest: pointer destination
- * @src: pointer source
- * @n: number of bytes
- * Return: void
-*/
+ * _memcpy - irontnoux2
+ * @dest: pointer to char params
+ * @src: pointer to char params
+ * @n: size
+ * Return: *dest
+ */
 
-char *_strncat(char *dest, char *src, int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	unsigned int i;
 
-	int dest_len, i;
-
-	for (dest_len = 0; dest[dest_len] != '\0'; dest_len++)
-	;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[dest_len + i] = src[i];
-
-	/*should end with a end of string char*/
-	dest[dest_len + i] = '\0';
-
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
 	return (dest);
 }
