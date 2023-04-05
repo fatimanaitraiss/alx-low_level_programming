@@ -2,8 +2,8 @@
 
 /**
  * _sqrt_recursion - find natural square root
- * @n: number to calculate the square root
- * Return: the natural square root
+ * @n: int
+ * Return: int
  */
 
 int _sqrt_recursion(int n)
