@@ -2,10 +2,10 @@
 
 /**
  * _print_rev_recursion - prints string in reverse
- * @s: pointer to the string
- * Return: void
+ * @s: the string to reverse
+ *
+ * Return: void, returns nothing
  */
-
 void _print_rev_recursion(char *s)
 {
 	if (*s > '\0')
