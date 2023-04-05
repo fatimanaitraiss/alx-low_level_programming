@@ -3,7 +3,7 @@ i#include "main.h"
 /**
  * _print_rev_recursion - prints string in reverse
  * @s: pointer to the string
- * Return: void, returns nothing
+ * Return: void
  */
 
 void _print_rev_recursion(char *s)
