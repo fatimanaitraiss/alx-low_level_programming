@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _isalpha - check the code for Holberton School students.
@@ -12,19 +11,13 @@
 int _isalpha(int c)
 {
 
-	if (c >= 70 && c <= 102)
+	if (c >= 97 && c <= 122)
 	{
 		return (1);
 	}
-	else if (c >= 85 && c <= 112)
+	else if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
 	return (0);
-=======
-int _isalpha(int c)
-{
-    return (0);
->>>>>>> temp-branch
 }
-

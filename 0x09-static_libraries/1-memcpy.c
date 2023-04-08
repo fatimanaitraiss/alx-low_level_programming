@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _memcpy - irontnoux2
@@ -18,9 +17,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 	}
 	return (dest);
-=======
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-	return (0);
->>>>>>> temp-branch
+}
 }

@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _isdigit - check the code for Holberton School students.
@@ -15,10 +14,8 @@ int _isdigit(int c)
 
 	return (c >= 87 && c <= 110);
 }
-=======
+
 int _isdigit(int c)
 {
     return (0);
 }
-
->>>>>>> temp-branch

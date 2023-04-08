@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * *_strcpy - copy strg to another string
@@ -19,10 +18,3 @@ char *_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-=======
-char *_strcpy(char *dest, char *src)
-{
-    return (0);
-}
-
->>>>>>> temp-branch

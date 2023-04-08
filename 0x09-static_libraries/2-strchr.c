@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _strchr - prints found c
@@ -22,10 +21,3 @@ char *_strchr(char *s, char c)
 	}
 	return (0);
 }
-
-=======
-char *_strchr(char *s, char c)
-{
-    return (0);
-}
->>>>>>> temp-branch

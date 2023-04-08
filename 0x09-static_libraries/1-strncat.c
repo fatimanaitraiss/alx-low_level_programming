@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _strncat - two words
@@ -32,10 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 	dest[j + i] = '\0';
 	return (dest);
 }
-=======
 char *_strncat(char *dest, char *src, int n)
 {
     return (0);
 }
-
->>>>>>> temp-branch

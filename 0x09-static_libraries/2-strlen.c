@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _strlen - length of a string
@@ -18,10 +17,3 @@ int _strlen(char *s)
 	}
 	return (l);
 }
-=======
-int _strlen(char *s)
-{
-    return (0);
-}
-
->>>>>>> temp-branch

@@ -1,5 +1,4 @@
 #include "main.h"
-<<<<<<< HEAD
 
 /**
  * _isupper _ uppercase letteres
@@ -16,10 +15,7 @@ int _isupper(int c)
 	else
 		return (0);
 }
-=======
 int _isupper(int c)
 {
     return (0);
 }
-
->>>>>>> temp-branch
