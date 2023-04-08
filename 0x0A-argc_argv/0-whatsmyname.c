@@ -1,16 +1,15 @@
-#include "holberton.h"
 #include <stdio.h>
 
 /**
- * main - Prints the name of the program
- * @argc: Number of command line arguments
- * @argv: Array name
+ * main - function
+ * @argc: offset count
+ * @argv: offset value
  * Return: 0
  */
 
+
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
-
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
