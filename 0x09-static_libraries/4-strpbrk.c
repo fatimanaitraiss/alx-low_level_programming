@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 #include <stdio.h>
 
 /**
@@ -26,3 +27,9 @@ char *_strpbrk(char *s, char *accept)
 	return (NULL);
 }
 
+=======
+char *_strpbrk(char *s, char *accept)
+{
+    return (0);
+}
+>>>>>>> temp-branch

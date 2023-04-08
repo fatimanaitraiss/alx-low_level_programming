@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * *_strcat - function commute srtings
@@ -30,3 +31,10 @@ char *_strcat(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+=======
+char *_strcat(char *dest, char *src)
+{
+    return (0);
+}
+
+>>>>>>> temp-branch

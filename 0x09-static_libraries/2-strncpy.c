@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _strncpy - two words
@@ -23,3 +24,10 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	return (dest);
 }
+=======
+char *_strncpy(char *dest, char *src, int n)
+{
+    return (0);
+}
+
+>>>>>>> temp-branch

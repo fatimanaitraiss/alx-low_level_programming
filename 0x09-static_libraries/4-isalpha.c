@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _isalpha - check the code for Holberton School students.
@@ -20,5 +21,10 @@ int _isalpha(int c)
 		return (1);
 	}
 	return (0);
+=======
+int _isalpha(int c)
+{
+    return (0);
+>>>>>>> temp-branch
 }
 

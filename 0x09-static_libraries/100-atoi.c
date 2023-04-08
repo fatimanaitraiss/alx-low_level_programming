@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 /**
  * _atoi - int
  * @s: pointer
@@ -26,5 +27,11 @@ int _atoi(char *s)
 	}
 	res = sig * res;
 	return (res);
+=======
+int _atoi(char *s)
+
+{
+    return (0);
+>>>>>>> temp-branch
 }
 

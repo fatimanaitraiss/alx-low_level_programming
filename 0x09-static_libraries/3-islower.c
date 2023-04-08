@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _islower - check the code for Holberton School students.
@@ -16,3 +17,10 @@ int _islower(int c)
 	}
 	return (0);
 }
+=======
+int _islower(int c)
+{
+    return (0);
+}
+
+>>>>>>> temp-branch

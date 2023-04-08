@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _abs - check the code for Holberton School students.
@@ -16,3 +17,10 @@ int _abs(int n)
 	}
 	return (-n);
 }
+=======
+int _abs(int n)
+{
+    return (0);
+}
+
+>>>>>>> temp-branch

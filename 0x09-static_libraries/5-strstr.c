@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
 * _strstr - function locate
@@ -31,3 +32,9 @@ char *_strstr(char *haystack, char *needle)
 	return (0);
 }
 
+=======
+char *_strstr(char *haystack, char *needle)
+{
+    return (0);
+}
+>>>>>>> temp-branch

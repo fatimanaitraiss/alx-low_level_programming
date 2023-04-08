@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _strcmp - compare
@@ -20,4 +21,9 @@ int _strcmp(char *s1, char *s2)
 	}
 	R = s1[i] - s2[i];
 	return (R);
+=======
+int _strcmp(char *s1, char *s2)
+{
+	return (0);
+>>>>>>> temp-branch
 }

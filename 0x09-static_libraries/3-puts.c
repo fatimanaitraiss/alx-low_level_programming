@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * _puts - prints string
@@ -15,3 +16,10 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
+=======
+void _puts(char *s)
+{
+   
+}
+
+>>>>>>> temp-branch
