@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
-* str_concat - Concatenates two strings.
+* str_concat - Concat two strings.
 * @s1: first string
 * @s2: second string
 * Return: pointer of an array of chars 
