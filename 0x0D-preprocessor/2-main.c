@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - prints the name the file of the program
- *
- * Return: always 0
- */
-
-int main (void)
+  * main - Prints the name of the file of the program
+  *
+  * Return: Always zero
+  */
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
