@@ -2,8 +2,8 @@
 
 /**
  *main -  print the opcodes of this program
- *@argc: The number of arguments supplied to the program
- *@argv: An array of pointers to the arguments
+ *@argc: integer value
+ *@argv: character value
  *
  *Return: Always 0
  */
