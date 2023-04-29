@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements of a linked list
- * @h: linked list of type listint_t to print
- * Return: integer
- */
+ * print_listint - Print elements of a singly linked list.
+ * @h: Pointer to a list.
+ * Return: Integer.
+ **/
 
 size_t print_listint(const listint_t *h)
 {
@@ -21,3 +21,4 @@ size_t print_listint(const listint_t *h)
 	}
 	return (cntr);
 }
+
