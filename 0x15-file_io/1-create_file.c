@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * create_file - function that creates a file.
@@ -10,26 +12,26 @@
 
 int create_file(const char *filename, char *text_content)
 {
-    if (filename == NULL)
-    {
-        return -1;
-    }
-    int fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-    if (fd == -1)
-    {
-        return -1;
-    }
-    if (text_content != NULL)
-    {
-        size_t len = strlen(text_content);
-        ssize_t num_written = write(fd, text_content, len);
-        if (num_written != (ssize_t)len)
-       	{
-            close(fd);
-            return -1;
-        }
-    }
-    close(fd);
-    return 1;
-}
+	int i = 0, file;
 
+	if (filename == NULL)
+		return (-1);
+
+	if (text_content == NULL)
+		text_content = "";
+
+
+	while (text_content[i] != '\0')
+	{
+		i++;
+	}
+
+	file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (file == -1)
+		return (-1);
+
+	write(file, text_content, i);
+
+	return (1);
+}
