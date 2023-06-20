@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -P /tmp https://github.com/Tolulope05/alx-low_level_programming/raw/master/0x18-dynamic_libraries/nrandom.so
-export LD_PRELOAD=/tmp/nrandom.so
+wget -O /tmp/will.so https://github.com/fatimanaitraiss/alx-low_level_programming/raw/master/0x18-dynamic_libraries/will.so
+export LD_PRELOAD=/tmp/will.so
