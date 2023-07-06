@@ -1,25 +1,30 @@
 #include "hash_tables.h"
+#include <stdlib.h>
+
 /**
-  * hash_table_create - creates a hash table
-  * @size: size of the array of the hash table
-  *
-  * Return: Pointer to the newly created hash table or Null if something goes wrong
-  */
+* hash_table_create - creates a hash table.
+* @size: size of the array.
+*
+* Return: poiter to the nrew array or
+*          Null if it fails/error occurs.
+*/
 hash_table_t *hash_table_create(unsigned long int size)
 {
-    hash_table_t *ht;
+	hash_table_t *meza;
 
-	if (size == 0)
+	/*Alloc mem for meza*/
+	meza = malloc(sizeof(hash_table_t));
+	if (meza == NULL)
 		return (NULL);
-
-	ht = malloc(sizeof(hash_table_t));
-	if (!ht)
+	/*Alloc mem for meza->array and Init it and its element to NULL*/
+	meza->array = calloc(size, sizeof(hash_table_t *));
+	if (meza->array == NULL)
+	{
+		free(meza);
 		return (NULL);
+	}
 
-	ht->size = size;
-	ht->array = calloc((size_t)ht->size, sizeof(hash_node_t *));
-	if (ht->array == NULL)
-		return (NULL);
+	meza->size = size;
 
-	return (ht);
+	return (meza);
 }
