@@ -1,45 +1,42 @@
-#include <stdio.h>
+#include "search_algos.h"
 
-int interpolation_search(int *array, size_t size, int value) {
-    if (array == NULL || size == 0) {
-        return -1;
-    }
+/**
+ *interpolation_search - function that  searches
+ *for a value in a sorted array of integers
+ *@array: pointer to the first element of the array to search in
+ *@size: number of elements in array
+ *@value: the value to search for
+ *Return: first index where value is located
+ */
 
-    int low = 0;
-    int high = size - 1;
+int interpolation_search(int *array, size_t size, int value)
+{
+	size_t i, l, r;
 
-    while (low <= high && value >= array[low] && value <= array[high]) {
-        size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
-        int probe = array[pos];
+	if (array == NULL)
+		return (-1);
 
-        printf("Comparing with array[%lu] = %d\n", pos, probe);
+	for (l = 0, (r = size - 1); r >= l;)
+	{
+		i = l + (((double)(r - l) / (array[r] - array[l])) * (value - array[l]));
+		if (i < size)
+		{
+			printf("Value checked array [%ld] = [%d]\n", i, array[i]);
+		}
+		else
+		{
+			printf("Value checked array [%ld] is out of range\n", i);
+			break;
+		}
 
-        if (probe == value) {
-            return pos; // Element found
-        }
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			r = i - 1;
+		else
+			l = i + 1;
+	}
+	return (-1);
 
-        if (probe < value) {
-            low = pos + 1; // Adjust the search range to the right
-        } else {
-            high = pos - 1; // Adjust the search range to the left
-        }
-    }
-
-    return -1; // Value not found in the array
 }
-
-int main() {
-    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
-    int size = sizeof(arr) / sizeof(arr[0]);
-    int search_value = 30;
-
-    int result = interpolation_search(arr, size, search_value);
-
-    if (result != -1) {
-        printf("Value %d found at index %d\n", search_value, result);
-    } else {
-        printf("Value %d not found in the array\n", search_value);
-    }
-
-    return 0;
 
