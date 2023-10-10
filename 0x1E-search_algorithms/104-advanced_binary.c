@@ -2,7 +2,7 @@
 
 
 /**
-  * advanced_binary_rec - Searches recursively for a value in a sorted
+  * advanced_binary_recursive - Searches recursively for a value in a sorted
   *                             array of integers using binary search.
   * @array: A pointer to the first element of the [sub]array to search.
   * @left: The starting index of the [sub]array to search.
@@ -14,7 +14,7 @@
   *
   * Description: Prints the [sub]array being searched after each change.
   */
-int advanced_binary_rec(int *array, size_t left, size_t right, int value)
+int advanced_binary_recursive(int *array, size_t left, size_t right, int value)
 {
 	size_t i;
 
